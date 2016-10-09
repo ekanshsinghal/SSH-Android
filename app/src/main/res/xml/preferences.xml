@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_terminal">
+        <ListPreference
+            android:key="font_size"
+            android:entries="@array/font_sizes"
+            android:entryValues="@array/font_sizes"
+            android:title="@string/pref_font"
+            android:summary="@string/pref_font_summary"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_general">
+    <Preference
+        android:title="@string/pref_delete_tables"
+        android:summary="@string/pref_delete_data_summary"
+        android:enabled="true"
+        android:key="delete_tables"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.techstreat.ssh_terminal.AddHost">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectionNameField"
+        android:hint="@string/connection_name"
+        android:inputType="text|textNoSuggestions|textFilter"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hostNameField"
+        android:hint="@string/host_message"
+        android:inputType="text|textNoSuggestions|textFilter"
+        android:layout_below="@+id/connectionNameField"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/usernameField"
+        android:layout_width="match_parent"
+        android:hint="@string/username_message"
+        android:inputType="text|textNoSuggestions|textFilter"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hostNameField"
+        android:layout_alignParentStart="true">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/portField"
+        android:hint="@string/port_message"
+        android:layout_below="@+id/usernameField"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/usernameField" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:hint="@string/password_message"
+        android:inputType="text|textPassword"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/portField"
+        android:layout_alignParentEnd="true">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/passwordField"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Connection Information:"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

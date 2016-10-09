@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.techstreat.ssh_terminal.TerminalActivity"
+    android:layout_marginBottom="5dp"
+    tools:showIn="@layout/activity_terminal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/esc"
+        android:id="@+id/frameLayout">
+
+        <view
+            android:id="@+id/emulatorView"
+            class="com.techstreat.ssh_terminal.terminal.TerminalView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/upButton" />
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/keyboardButton"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_action_keyboard"
+        android:elevation="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/Ctrl"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Ctrl"
+        android:textSize="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/esc" />
+
+    <Button
+        android:id="@+id/esc"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Esc"
+        android:textSize="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/rightButton" />
+
+
+    <Button
+        android:id="@+id/tab"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Tab"
+        android:textSize="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/keyboardButton" />
+
+
+    <ImageButton
+        android:id="@+id/leftButton"
+        android:layout_width="45dp"
+        android:layout_height="48dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_action_left"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/tab" />
+
+    <ImageButton
+        android:id="@+id/upButton"
+        android:layout_width="45dp"
+        android:layout_height="48dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_action_up"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/leftButton" />
+
+    <ImageButton
+        android:id="@+id/rightButton"
+        android:layout_width="45dp"
+        android:layout_height="48dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_action_right"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/upButton" />
+
+</RelativeLayout>

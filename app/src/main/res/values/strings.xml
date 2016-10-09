@@ -1,0 +1,66 @@
+<resources>
+    <!-- Toolbar -->
+    <string name="Ctrl">Ctrl</string>
+    <string name="Esc">Esc</string>
+    <string name="Tab">Tab</string>
+
+    <!-- Activity Titles -->
+    <string name="app_name">SSH Terminal</string>
+
+    <!-- Menu Items -->
+    <string name="saved_servers">Saved Connections</string>
+    <string name="action_settings">Settings</string>
+    <string name="exit">Exit</string>
+
+    <!-- Host List -->
+    <string name="add_host">Add</string>
+    <string name="delete_host">Delete</string>
+
+    <!-- Add/Edit Connection -->
+    <string name="connection_name">connection name</string>
+    <string name="host_message">host name</string>
+
+    <!-- Preference Menu -->
+    <string name="pref_connection">Connection Preferences</string>
+    <string name="pref_host_checking">Disable Host Checking</string>
+    <string name="pref_host_checking_summary">If you know what you\'re doing, feel free to disable</string>
+    <string name="pref_font">Font Size</string>
+    <string name="pref_font_summary">Choose the font size, this can be set while in the terminal using your volume buttons</string>
+    <string name="pref_delete_tables">Delete All Saved Data</string>
+    <string name="pref_delete_data_summary">This will delete all your folder pairs, saved connections, and known fingerprints.</string>
+    <string name="pref_general">General</string>
+    <string name="pref_about">About</string>
+    <string name="pref_terminal">Terminal Preferences</string>
+    <string name="terminal_emulation">Terminal Emulation</string>
+    <string name="terminal_emulation_summary">xterm-256 color is probably the best to use</string>
+
+    <!-- Preference arrays -->
+    <string-array name="terminal_values">
+        <item>screen</item>
+        <item>xterm-256color</item>
+        <item>xterm</item>
+    </string-array>
+    <string-array name="font_sizes">
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+
+    <!-- Quick Connect Menu//NOT DONE -->
+    <string name="username_message">username</string>
+    <string name="password_message">password</string>
+
+    <string name="port_message">port</string>
+
+    <string name="title_activity_terminal">TerminalActivity</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+</resources>
